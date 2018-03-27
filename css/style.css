@@ -1,7 +1,10 @@
 /*Wszystkie wartości któe dałem do CSS-a są z programu Avocode - przeniosłem te wartośći i dałem w komentarz (jak chcemy identiko z psd kolory, marginy itp to można odkomentować)*/
-*{
-     margin: 0 auto;
+* {
      box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .page-wrapper{
@@ -10,7 +13,7 @@
 }
 /*Header_secion*/
 .page_header{
-     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/photo-min.png");
+     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/photo-min.png");
      max-width: 1920px;
      height: 1209px;
      z-index: -5;
@@ -83,16 +86,73 @@ font-size: 18px;
 font-weight: 400;
 line-height: 92.97px; */
 }
-.main{
 
-     background-color: #ffffff;
+/* City images gallery */
+.main_image {
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
 }
-.main_image{
-     /* Style for "Photo dark" */
-     display: flex;
-     width: 345px;
-     height: 433px;
+
+.page_image {
+    flex-basis: 19%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
 }
+
+.main_image img {
+    width: 100%;
+}
+
+.page_image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.page_image_overlay h2 {
+    margin: 0;
+}
+
+.page_image_overlay p {
+    color: #ffc74a;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.page_image_overlay--middle p {
+    color: inherit;
+    margin-bottom: auto;
+}
+
+.page_image_overlay--middle h2 {
+    font-size: 40px;
+    margin-top: auto;
+}
+
+.page_image_button {
+    border: 1px solid #ffc74a;
+    background-color: #ffc74a;
+    border-radius: 150px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    font-size: 12px;
+    font-weight: 700;
+    color: #b48622;
+}
+
+
+
 .mian_content{
 
 }
@@ -145,14 +205,6 @@ text-transform: uppercase; */
 /* Style for "BG" */
 /* width: 1920px;
 height: 897px;
-background-color: #bdc8d9;
-opacity: 0.1; */
-
-/* Style for "Box" */
-/* width: 595px;
-height: 577px;
-border: 15px solid #ffc74a;
-background-color: #ed6950; */
 
 /* Style for "Photo" */
 /* width: 570px;
