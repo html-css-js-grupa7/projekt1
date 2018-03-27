@@ -3,10 +3,15 @@
      margin: 0 auto;
      box-sizing: border-box;
 }
+
+.page-wrapper{
+    max-width:100%;
+    overflow: hidden;
+}
 /*Header_secion*/
 .page_header{
      background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/photo-min.png");
-     width: 1920px;
+     max-width: 1920px;
      height: 1209px;
      z-index: -5;
      color: #fff;
