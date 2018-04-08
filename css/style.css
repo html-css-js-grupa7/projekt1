@@ -170,17 +170,107 @@ background-color: #ffffff; */
      width: 371px;
      height: 350px;
 }
-.main_explore{
-     display: flex;
+/* MAIN EXPLORE */
+
+.main_explore {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/img/bg-min.png");
+    background-size: cover;
+    position: relative;
 }
-.main_explore--description{
+
+.main_explore > h3 {
+    color: #606f81;
+    white-space: nowrap;
+    margin-left: 45%;
+    top: 5%;
+    position: absolute;
+    font-size: 20px;
 
 }
-.main_explore--photo{
 
+.main_explore--description p {
+    position: absolute;
+    width: 35%;
+    font-size: 12px;
+    margin-top: 16%;
+    line-height: 20px;
+    left: 19%;
 }
-.main_explore--photo>img{
-     /* Style for "SAN" */
+
+.main_explore--description > h3 {
+    color: #ffc74a;
+    font-size: 25px;
+    position: absolute;
+    left: 19%;
+    top: 20%;
+}
+
+.main_explore--button {
+    border-radius: 28px;
+    color: #B98000;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 40px 15px 40px;
+    background-color: #FFC74A;
+    cursor: pointer;
+    border: 1px solid #ffc74a;
+    top: 72%;
+    position: relative;
+    right: -155%;
+    transition: all 0.4s;
+}
+
+.main_explore--button:hover {
+    color: #FFC74A;
+    background-color: #B98000;
+    border: 1px solid #b98000;
+    text-transform: 1s;
+}
+
+/* main_explore--photo */
+
+.box {
+    width: 330px;
+    height: 390px;
+    left: 53%;
+    position: relative;
+    top: 21%;
+    z-index: 2;
+}
+
+.san {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: -16%;
+    left: 26%;
+}
+
+.ierz {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    left: 54%;
+    top: -8%;
+}
+
+.image {
+    width: 330px;
+    height: 390px;
+    position: absolute;
+    top: 17%;
+    left: 57%;
+    z-index: 3;
+}
+
+/* Style for "SAN" */
+
 /* width: 726px;
 height: 257px;
 text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
@@ -192,6 +282,7 @@ line-height: 267.49px;
 text-transform: uppercase; */
 
 /* Style for "DOM" */
+
 /* width: 785px;
 height: 257px;
 text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
@@ -203,13 +294,15 @@ line-height: 267.49px;
 text-transform: uppercase; */
 
 /* Style for "BG" */
+
 /* width: 1920px;
 height: 897px;
 
 /* Style for "Photo" */
+
 /* width: 570px;
 height: 555px; */
-}
+
 .mian_signUp{
      background-image: url("img/signUp-min.png");
      /* Style for "Photo" */
