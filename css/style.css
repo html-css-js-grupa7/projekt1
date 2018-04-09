@@ -1,53 +1,79 @@
 /*Wszystkie wartości któe dałem do CSS-a są z programu Avocode - przeniosłem te wartośći i dałem w komentarz (jak chcemy identiko z psd kolory, marginy itp to można odkomentować)*/
+
 * {
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.page-wrapper{
-    max-width:100%;
+.page-wrapper {
+    max-width: 100%;
     overflow: hidden;
 }
 
-/* MAIN EXPLORE */
+/* main_explore */
 
 .main_explore {
-    display: flex;
+    background-image: url("/img/bg-min.png");
     width: 100%;
     height: 100vh;
-    background-image: url("/img/bg-min.png");
-    background-size: cover;
-    position: relative;
+    display: flex;
 }
 
 .main_explore > h3 {
     color: #606f81;
-    white-space: nowrap;
-    margin-left: 45%;
-    top: 5%;
-    position: absolute;
     font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-left: 45%;
+    white-space: nowrap;
+}
 
+/* main_explore-sandomierz */
+
+.main_explore-sandomierz {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    margin-left: 7%;
+}
+
+.main_explore-sandomierz .san {
+    width: 600px;
+    height: 300px;
+}
+
+.main_explore-sandomierz .ierz {
+    width: 600px;
+    height: 300px;
+}
+
+/* main_explore--description */
+
+.main_explore--description {
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+
+.main_explore--description h3 {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -9%;
+    font-size: 23px;
+    color: #ffc74a;
 }
 
 .main_explore--description p {
-    position: absolute;
     width: 35%;
+    height: 100%;
+    margin-top: 15%;
     font-size: 12px;
-    margin-top: 16%;
     line-height: 20px;
-    left: 19%;
-}
-
-.main_explore--description > h3 {
-    color: #ffc74a;
-    font-size: 25px;
-    position: absolute;
-    left: 19%;
-    top: 20%;
+    margin-left: 15%;
 }
 
 .main_explore--button {
@@ -62,10 +88,8 @@ body {
     background-color: #FFC74A;
     cursor: pointer;
     border: 1px solid #ffc74a;
-    top: 72%;
-    position: relative;
-    right: -155%;
     transition: all 0.4s;
+    margin-top: 10%;
 }
 
 .main_explore--button:hover {
@@ -80,67 +104,15 @@ body {
 .box {
     width: 330px;
     height: 390px;
-    left: 53%;
-    position: relative;
-    top: 21%;
-    z-index: 2;
-}
-
-.san {
-    width: 600px;
-    height: 300px;
-    position: relative;
-    top: -16%;
-    left: 26%;
-}
-
-.ierz {
-    width: 600px;
-    height: 300px;
-    position: relative;
-    left: 54%;
-    top: -8%;
+    position: absolute;
+    top: 25%;
+    left: 59.5%;
 }
 
 .image {
     width: 330px;
     height: 390px;
+    top: 21%;
+    left: 57.5%;
     position: absolute;
-    top: 17%;
-    left: 57%;
-    z-index: 3;
 }
-
-/* Style for "SAN" */
-
-/* width: 726px;
-height: 257px;
-text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
-color: #ffc74a;
-font-family: Montserrat;
-font-size: 355px;
-font-weight: 700;
-line-height: 267.49px;
-text-transform: uppercase; */
-
-/* Style for "DOM" */
-
-/* width: 785px;
-height: 257px;
-text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
-color: #ffc74a;
-font-family: Montserrat;
-font-size: 355px;
-font-weight: 700;
-line-height: 267.49px;
-text-transform: uppercase; */
-
-/* Style for "BG" */
-
-/* width: 1920px;
-height: 897px;
-
-/* Style for "Photo" */
-
-/* width: 570px;
-height: 555px; */
