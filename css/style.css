@@ -210,31 +210,50 @@ height: 897px;
 /* width: 570px;
 height: 555px; */
 }
-.mian_signUp{
-     background-image: url("img/signUp-min.png");
+.main_signUp{
+     background-image:  url("../img/signUp-min.png");
      /* Style for "Photo" */
-     width: 1920px;
-     height: 642px;
+     width: auto;
+     height: 400px;
      color: #fff;
      text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
 }
 .main_signUp--button{
-     /* Style for "Button" */
-/* width: 154px;
-height: 51px;
-background-color: #ffc74a; */
+width: 154px;
+height: 42px;
+background-color: #ffc74a;
+align-self: center;
+border: 1px solid #ffc74a;
+border-radius: 150px;;
+  color: #b48622;
+  font-weight: bold;
+}
+.main_signUp>h1{
+  font-size: 4em;
+  margin: 0;
+  padding: 30px;
 }
 .main_signUp>p{
      /* Style for "You can al" */
-width: 350px;
 height: 18px;
 color: #ffffff;
-font-family: Montserrat;
+width: 350px;
 font-size: 18px;
+font-family: Montserrat;
 font-weight: 400;
-line-height: 94.54px;
+align-self: center;
+margin: 0;
+padding: 30px 0;
 /* Text style for "newsletter" */
 /*color: #ffc74a; */
+}
+.main_signUp--underline{
+  text-decoration: underline;
+  color: #ffc74a;
 }
 .page_footer{
      /* Style for "BG" */
