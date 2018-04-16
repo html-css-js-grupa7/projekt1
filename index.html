@@ -2,37 +2,110 @@
 <html lang="pl">
      <head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta charset="utf-8">
           <title>Polska</title>
           <link rel="stylesheet" href="normalize.css">
           <link rel="stylesheet" href="style.css">
      </head>
      <body>
-          <header class="page_header">
-               <div class="container">
-                    <a href="#" class="page_logo"><img src="img/logo.png" alt="logo"></a>
-                    <h1>Polind</h1>
-                    <nav class="page_nav">
-                         <ul class="page_nav page_nav--items">
-                              <li><a href="#" class="active"></a>Guide</li>
-                              <li><a href="#" class="active"></a>Journey</li>
-                              <li><a href="#" class="active"></a>Hotels</li>
-                              <li><a href="#" class="active"></a>Travelers</li>
-                              <li><a href="#" class="active"></a><img src="img/search.png" alt="search"></li>
-                         </ul>
-                    </nav>
-               </div>
-               <section class="section_text">
-                    <div class="section_text--elements">
-                         <h1>Fall in love <span>with Poland</span></h1>
-                         <p>Best way to find your perfect place in Poland</p>
-                    </div>
-                    <button class="section_button" type="button" name="button">Search your place</button>
-               </section>
-               <section class="section_small--text">
-                    <p>Popular places to discover</p>
-               </section>
-          </header>
+               <header class="page_header">
+                    <div class="container">
+                         <a href="#" class="page_logo"><img src="img/logo.png" alt="logo"></a>
+                         <h1>Polind</h1>
 
+                              <button type="button" class="menu-icon"><img src="img/menu-min.png" alt="menu-icon"></button>
+                         <nav class="page_nav">
+                              <ul class="page_nav page_items">
+                                   <li><a href="#" class="active"></a>Guide</li>
+                                   <li><a href="#" class="active"></a>Journey</li>
+                                   <li><a href="#" class="active"></a>Hotels</li>
+                                   <li><a href="#" class="active"></a>Travelers</li>
+                                   <li><a href="#" class="active"></a><img src="img/search.png" alt="search"></li>
+                              </ul>
+
+                         </nav>
+                    </div>
+                    <section class="section_title">
+                         <div class="section--text">
+                              <h1>Fall in love <span>with Poland</span></h1>
+                              <p>Best way to find your perfect place in Poland</p>
+                         </div>
+                         <button class="section_button--search" type="button" name="button">Search your place</button>
+                    </section>
+                    <section class="section_paragraph">
+                         <p>Popular places to discover</p>
+                    </section>
+               </header>
+               <main class="page_main">
+                    <section class="page_section">
+                         <h2>Where you want to go?</h2>
+                         <textarea class="page_section--search" name="search" rows="1" cols="80">Search places</textarea>
+                         <div class="page_section--option">
+                              <div class="page_section--button">
+                                   <input class="section--button" type="button" name="button" value="Journey">
+                                   <input class="section--button" type="button" name="button" value="Travelers">
+                                   <input class="section--button" type="button" name="button" value="Guide">
+                              </div>
+                              <div class="page_section--description">
+                                   <p class="section--description">Mazury</p>
+                                   <p class="section--description">Cracow</p>
+                                   <p class="section--description">Zakopane</p>
+                              </div>
+                         </div>
+                    </section>
+                    <section class="section_offers">
+                         <div class="offers_city">
+                              <div class="link_city">
+                                   <img class="city_image" src="img/poznan-min.png" alt="Poznan">
+                                   <h3>Poznan</h3>
+                                   <p>Wielkopolskie</p>
+                                   <a class="link_button" href="#"><button type="button">View Offers</button></a>
+                              </div>
+                              <div class="link_city">
+                                   <img class="city_image" src="img/warsaw-min.png" alt="Warszawa">
+                                   <h3>Warsaw</h3>
+                                   <p>Mazowieckie</p>
+                                   <a class="link_button" href="#"><button type="button">View Offers</button></a>
+                              </div>
+                              <div class="link_city">
+                                   <img class="city_image" src="img/wroclaw-min.png" alt="Wrocław">
+                                   <h3>Wroclaw</h3>
+                                   <p>Dolnośląskie</p>
+                                   <a class="link_button" href="#"><button type="button">View Offers</button></a>
+                              </div>
+
+                         </div>
+                         <div class="offers_city">
+                              <div class="link_city">
+                                   <img class="city_image" src="img/karpacz-min.png" alt="Karpacz">
+                                   <h3>Poznan</h3>
+                                   <p>Wielkopolskie</p>
+                                   <a class="link_button" href="#"><button type="button">View Offers</button></a>
+                              </div>
+                              <div class="link_city">
+                                   <img class="city_image" src="img/dolinka-min.png" alt="Dolina Olczyska">
+                                   <h3>Warsaw</h3>
+                                   <p>Mazowieckie</p>
+                                   <a class="link_button" href="#"><button type="button">View Offers</button></a>
+                              </div>
+                              <div class="link_city">
+                                   <img class="city_image" src="img/kozy-min.png" alt="Kozy">
+                                   <h3>Wroclaw</h3>
+                                   <p>Dolnośląskie</p>
+                                   <a class="link_button" href="#"><button type="button">View Offers</button></a>
+                              </div>
+                         </div>
+                    </section>
+               </main>
+
+               <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                    <script>
+                    $(document).ready(function(){
+                  $('.menu-icon').click(function(){
+                     $('.page_items').stop().slideToggle(300);
+                  });
+               });
+               </script>
      </body>
 </html>
