@@ -7,212 +7,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.page-wrapper{
-    max-width:100%;
-    overflow: hidden;
-}
-/*Header_secion*/
-.page_header{
-     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/photo-min.png");
-     max-width: 1920px;
-     height: 1209px;
-     z-index: -5;
-     color: #fff;
-}
-/*logo*/
-.page_logo{
-     display: block;
-     width: 51px;
-     height: 61px;
-     margin-top: 64px;
-     margin-left: 40px;
-}
-.container{
-     display: flex;
-}
-.container>h1{
-     position: absolute;
-     text-align: left;
-     margin-top: 80px;
-     margin-left: 111px;
-}
-/*Navigation section*/
-.page_nav{
-     margin-top: 55px;
-     margin-right: 106px;
-}
-.page_nav--items{
-     display: flex;
-     align-items: center;
-     width: auto;
-     height: 26px;
-     color: #ffffff;
-     font-family: Montserrat;
-     font-size: 26px;
-     font-weight: 400;
-     list-style: none;
-     letter-spacing: 0.45px;
-}
-.page_nav--items>li{
-     padding: 0 20px;
-}
-/* Style for "Photo" */
-.section_text{
-     /* Style for "Fall in lo" */
-width: 549px;
-height: 163px;
-color: #ffffff;
-margin-top: 337px;
-margin-left: auto;
-margin-right: auto;
-/* font-family: Montserrat;
-font-size: 92px;
-font-weight: 700;
-line-height: 92px; */
-}
-/* Style for "Button" */
-.section_button{
-width: 232px;
-height: 51px;
-/* background-color: #ffc74a; */
-}
-.section_small_text{
-     /* Style for "Popular pl" */
-width: 238px;
-height: 18px;
-color: #ffffff;
-font-size: 18px;
-/* font-family: Montserrat;
-font-weight: 400;
-line-height: 92.97px; */
-}
-
-/* City images gallery */
-.main_image {
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-}
-
-.page_image {
-    flex-basis: 19%;
-    height: 100%;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-}
-
-.main_image img {
-    width: 100%;
-}
-
-.page_image_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding: 50px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.page_image_overlay h2 {
-    margin: 0;
-}
-
-.page_image_overlay p {
-    color: #ffc74a;
-    font-size: 10px;
-    margin-top: 5px;
-}
-
-.page_image_overlay--middle p {
-    color: inherit;
-    margin-bottom: auto;
-}
-
-.page_image_overlay--middle h2 {
-    font-size: 40px;
-    margin-top: auto;
-}
-
-.page_image_button {
-    border: 1px solid #ffc74a;
-    background-color: #ffc74a;
-    border-radius: 150px;
-    padding: 10px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1.5;
-    font-size: 12px;
-    font-weight: 700;
-    color: #b48622;
-}
-
-
-
-.mian_content{
-
-}
-.main_content--textarea{
-     /* Style for "Area" */
-/* width: 810px;
-height: 59px;
-box-shadow: 0 0 85px rgba(141, 148, 169, 0.15);
-background-color: #ffffff; */
-}
-.main_contentSecond{
-     display: flex;
-}
-.--firstItems{
-     width: 371px;
-     height: 350px;
-}
-.main_explore{
-     display: flex;
-}
-.main_explore--description{
-
-}
-.main_explore--photo{
-
-}
-.main_explore--photo>img{
-     /* Style for "SAN" */
-/* width: 726px;
-height: 257px;
-text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
-color: #ffc74a;
-font-family: Montserrat;
-font-size: 355px;
-font-weight: 700;
-line-height: 267.49px;
-text-transform: uppercase; */
-
-/* Style for "DOM" */
-/* width: 785px;
-height: 257px;
-text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
-color: #ffc74a;
-font-family: Montserrat;
-font-size: 355px;
-font-weight: 700;
-line-height: 267.49px;
-text-transform: uppercase; */
-
-/* Style for "BG" */
-/* width: 1920px;
-height: 897px;
-
-/* Style for "Photo" */
-/* width: 570px;
-height: 555px; */
-}
 .main_signUp{
      background-image:  url("../img/signUp-min.png");
-     /* Style for "Photo" */
      width: auto;
      height: 400px;
      color: #fff;
@@ -238,7 +34,6 @@ border-radius: 150px;;
   padding: 30px;
 }
 .main_signUp>p{
-     /* Style for "You can al" */
 height: 18px;
 color: #ffffff;
 width: 350px;
@@ -248,28 +43,8 @@ font-weight: 400;
 align-self: center;
 margin: 0;
 padding: 30px 0;
-/* Text style for "newsletter" */
-/*color: #ffc74a; */
 }
 .main_signUp--underline{
   text-decoration: underline;
   color: #ffc74a;
-}
-.page_footer{
-     /* Style for "BG" */
-width: 1920px;
-height: 4500px;
-}
-.page_footer>h1{
-     /* Style for "POLIND" */
-/* width: 1175px;
-height: 221px;
-opacity: 0.55;
-text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
-color: #ffc74a;
-font-family: Montserrat;
-font-size: 305px;
-font-weight: 700;
-line-height: 229.76px;
-text-transform: uppercase; */
 }
