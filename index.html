@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="pl">
-     <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta charset="utf-8">
-          <title>Polska</title>
-          <link rel="stylesheet" href="css/normalize.css">
-          <link rel="stylesheet" href="css/style.css">
-     </head>
-     <body>
-               <header class="page_header">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="page_header">
                     <div class="container">
                          <a href="#" class="page_logo"><img src="img/logo.png" alt="logo"></a>
                          <h1>Polind</h1>
@@ -35,8 +36,38 @@
                          <p>Popular places to discover</p>
                     </section>
                </header>
-               <main class="page_main">
-                    <section class="page_section">
+   <main class="page_main">
+        <section class="popular-places">
+                <picture class="popular-places_box">
+                  <img src="img/photo-dark1-min.png" class="popular-places_img" alt="">
+                </picture>
+                <picture class="popular-places_box">
+                  <div class="box_overlay">
+                    <h2 class="box_title">Zakopane</h2>
+                    <p class="box_description">Małopolskie</p>
+                  </div>
+                  <img src="img/zakopane-min.png" class="popular-places_img" alt="">
+                </picture>
+                <picture class="popular-places_box">
+                    <div class="box_overlay">
+                      <h2 class="box_title--middle">Sandomierz</h2>
+                      <p class="box_description box_description--middle">Świętokrzyskie</p>
+                      <button type="button" class="popular-places_button">View offers</button>
+                    </div>
+                  <img src="img/sandomierz-min.png" class="popular-places_img" alt="">
+                </picture>
+                <picture class="popular-places_box">
+                    <div class="box_overlay">
+                      <h2 class="box_title">Sopot</h2>
+                      <p class="box_description">Pomorskie</p>
+                    </div>
+                  <img src="img/sopot-min.png" class="popular-places_img" alt="">
+                </picture>
+                <picture class="popular-places_box">
+                  <img src="img/photo-dark-min.png" class="popular-places_img" alt="">
+                </picture>
+              </section>
+        <section class="page_section">
                          <h2>Where you want to go?</h2>
                          <textarea class="page_section--search" name="search" rows="1" cols="80">Search places</textarea>
                          <div class="page_section--option">
@@ -93,16 +124,47 @@
                                    <a class="link_button" href="#"><button type="button">View Offers</button></a>
                               </div>
                          </div>
-                    </section>
-               </main>
-
-               <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-                    <script>
+        <div class="page-wrapper">
+            <section class="main_explore">
+                <h3>Explore city</h3>
+                <div class="main_explore-sandomierz">
+                    <img class="san" src="img/san-min.png">
+                    <img class="ierz" src="img/ierz-min.png">
+                </div>
+                <div class="main_explore--description">
+                    <h3>Sandomierz</h3>
+                    <p>Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes.
+                        </br>
+                        </br>
+                        The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.</br>
+                        <button class="main_explore--button">CHECK OFFERS</button>
+                    </p>
+                </div>
+                <div class="main_explore--photo">
+                    <img class="box" src="img/box-min.png">
+                    <img class="image" src="img/image-min.png">
+                </div>
+            </section>
+        </div>
+        <section class="main_signUp">
+            <h1>Enjoy your journey</h1>
+            <button class="main_signUp--button" type="button" name="button">SIGN UP</button>
+            <p>You can also sign up on our <span class="main_signUp--underline">newsletter</span></p>
+       </section>
+       <footer class="page_footer">
+        <h1>POLIND</h1>
+        <a href="#"><img src="img/logo.png" alt="logo"></a>
+        <p>All rights reserved by symu.co</p>
+    </footer>
+   </main>
+   
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                 <script>
                     $(document).ready(function(){
                   $('.menu-icon').click(function(){
                      $('.page_items').stop().slideToggle(300);
                   });
                });
                </script>
-     </body>
+</body>
 </html>
