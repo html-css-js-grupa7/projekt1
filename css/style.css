@@ -298,3 +298,273 @@ body{
           justify-content: center;
      }
 }
+
+/* Popular places */
+
+.popular-places {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.popular-places_box {
+  -ms-flex-preferred-size: 19%;
+  flex-basis: 19%;
+  flex-basis: 19%;
+  position: relative;
+}
+
+.popular-places_img {
+  width: 100%;
+}
+
+.box_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.box_title {
+  margin: 0;
+}
+
+.box_description {
+  color: #ffc74a;
+  font-size: 10px;
+}
+
+.box_description--middle {
+  margin-bottom: auto;
+  color: inherit;
+}
+
+.box_title--middle {
+  font-size: 35px;
+  margin: auto 0 0;
+}
+
+.popular-places_button {
+  border: 2px solid #ffc74a;
+  background-color: #ffc74a;
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #b98000;
+  transition: all 0.4s;
+}
+
+.popular-places_button:hover {
+  color: #ffc74a;
+  background-color: transparent;
+  cursor: pointer;
+}
+.main_explore {
+  background-image: url("/img/bg-min.png");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.page-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.main_explore > h3 {
+  color: #606f81;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-left: 45%;
+  white-space: nowrap;
+}
+
+/* main_explore-sandomierz */
+
+.main_explore-sandomierz {
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  margin-left: 7%;
+}
+
+.main_explore-sandomierz .san {
+  width: 600px;
+  height: 300px;
+}
+
+.main_explore-sandomierz .ierz {
+  width: 600px;
+  height: 300px;
+}
+
+/* main_explore--description */
+
+.main_explore--description {
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+
+.main_explore--description h3 {
+  position: absolute;
+  margin-left: 15%;
+  margin-top: -9%;
+  font-size: 23px;
+  color: #ffc74a;
+}
+
+.main_explore--description p {
+  width: 35%;
+  height: 100%;
+  margin-top: 15%;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 15%;
+}
+
+.main_explore--button {
+  border-radius: 28px;
+  color: #B98000;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 40px 15px 40px;
+  background-color: #FFC74A;
+  cursor: pointer;
+  border: 1px solid #ffc74a;
+  transition: all 0.4s;
+  margin-top: 10%;
+}
+
+.main_explore--button:hover {
+  color: #FFC74A;
+  background-color: #B98000;
+  border: 1px solid #b98000;
+  text-transform: 1s;
+}
+
+/* main_explore--photo */
+
+.box {
+  width: 330px;
+  height: 390px;
+  position: absolute;
+  top: 25%;
+  left: 59.5%;
+}
+
+.image {
+  width: 330px;
+  height: 390px;
+  top: 21%;
+  left: 57.5%;
+  position: absolute;
+}
+
+.main_signUp{
+  background-image:  url("../img/signUp-min.png");
+  width: auto;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.main_signUp--button{
+width: 154px;
+height: 42px;
+background-color: #ffc74a;
+align-self: center;
+border: 1px solid #ffc74a;
+border-radius: 150px;;
+color: #b48622;
+font-weight: bold;
+}
+.main_signUp>h1{
+font-size: 4em;
+margin: 0;
+padding: 30px;
+}
+.main_signUp>p{
+height: 18px;
+color: #ffffff;
+width: 350px;
+font-size: 18px;
+font-family: Montserrat;
+font-weight: 400;
+align-self: center;
+margin: 0;
+padding: 30px 0;
+}
+.main_signUp--underline{
+text-decoration: underline;
+color: #ffc74a;
+}
+.page_footer{
+  max-width: 100vw;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_footer > h1{
+  position: absolute;
+  opacity: 0.55;
+  text-shadow: 0 0 125px rgba(141, 148, 169, 0.5);
+  color: #fff;
+  font-size: 20vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: -1;
+  margin: 0;
+}
+
+.page_footer > a{
+  width: 51px;
+  height: 61px;
+  margin-bottom: 20px;
+}
+
+.page_footer > p{
+  text-align: center;
+  max-width: 100vw;
+  width: 100%;
+  color: #606f81;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 0.24px;
+}
