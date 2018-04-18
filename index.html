@@ -152,11 +152,19 @@
             <button class="main_signUp--button" type="button" name="button">SIGN UP</button>
             <p>You can also sign up on our <span class="main_signUp--underline">newsletter</span></p>
        </section>
-       <footer class="page_footer">
+   </main>
+   <footer class="page_footer">
         <h1>POLIND</h1>
         <a href="#"><img src="img/logo.png" alt="logo"></a>
         <p>All rights reserved by symu.co</p>
     </footer>
-   </main>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                    <script>
+                    $(document).ready(function(){
+                  $('.menu-icon').click(function(){
+                     $('.page_items').stop().slideToggle(300);
+                  });
+               });
+               </script>
 </body>
 </html>
