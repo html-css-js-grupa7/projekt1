@@ -27,7 +27,7 @@ body{
      display: flex;
      justify-content:space-between;
 }
-.container>h1{
+.page_title{
      position: absolute;
      text-align: left;
      margin-top: 80px;
@@ -56,15 +56,15 @@ body{
      color: #ed6950;
 }
 /* Style for "Photo" */
-.section__text>h1{
-     width: 549px;
+.mainHeadline{
+	 width:549px;
+	 margin:240px auto 20px auto;
      color: #ffffff;
-     margin:240px auto 20px auto;
      font-size: 92px;
      font-weight: 700;
      text-align: center;
 }
-.section__text>h1>span{
+.mainHeadline>span{
      color: #ed6950;
 }
 .section__text>p{
@@ -161,7 +161,7 @@ body{
      margin: auto;
      width: 100%;
 }
-.page_section>h2{
+.headlineSection{
      margin-top: 59px;
      margin-bottom:52px;
      text-align: center;
@@ -298,6 +298,7 @@ body{
           justify-content: center;
      }
 }
+
 
 
 /* Popular places */
