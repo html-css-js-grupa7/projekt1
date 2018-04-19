@@ -56,7 +56,7 @@ body{
      color: #ed6950;
 }
 /* Style for "Photo" */
-.mainHeadline{
+.main__headline{
 	 width:549px;
 	 margin:240px auto 20px auto;
      color: #ffffff;
@@ -64,7 +64,7 @@ body{
      font-weight: 700;
      text-align: center;
 }
-.mainHeadline>span{
+.main__headline>span{
      color: #ed6950;
 }
 .section__text>p{
@@ -161,7 +161,7 @@ body{
      margin: auto;
      width: 100%;
 }
-.headlineSection{
+.section__headline{
      margin-top: 59px;
      margin-bottom:52px;
      text-align: center;
