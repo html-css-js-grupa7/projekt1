@@ -27,7 +27,7 @@ body{
      display: flex;
      justify-content:space-between;
 }
-.page_title{
+.container>h1{
      position: absolute;
      text-align: left;
      margin-top: 80px;
@@ -57,9 +57,9 @@ body{
 }
 /* Style for "Photo" */
 .main__headline{
-	 width:549px;
-	 margin:240px auto 20px auto;
+     width: 549px;
      color: #ffffff;
+     margin:240px auto 20px auto;
      font-size: 92px;
      font-weight: 700;
      text-align: center;
@@ -130,6 +130,11 @@ body{
                top: 8.5%;
                right: 8%;
           }
+          .main__headline{
+               flex-direction: column;
+               width: 60vh;
+               font-size: 10vh;
+          }
 }
      @media screen and (min-width: 950px){
           .menu-icon{
@@ -196,7 +201,6 @@ body{
      padding: 20px 20px;
 }
 .section__button{
-     height:auto;
      background-color: #bdc8d9;
      /* Style for "Travelers" */
      color: #ffffff;
@@ -280,6 +284,17 @@ body{
 }
 /*RESPONSIVE WHERE YOU WANT TO GO */
 @media screen and (max-width:950px){
+     .page_section--search{
+          padding: 3%;
+     }
+     .section__button{
+          display: flex;
+          font-size: 80%;
+          flex-direction: column;
+     }
+     .section__headline{
+          font-size: 4vh;
+     }
      .page_section__description{
           display: flex;
           flex-direction: column;
@@ -296,8 +311,8 @@ body{
      .link_city__province,
      .link_button>button{
           justify-content: center;
-     }
 }
+
 
 
 
